@@ -1,7 +1,7 @@
 name: 'Hello World Action'
 description: 'A custom action to print Hello World'
 runs:
-  using: 'node12'
+  using: 'docker'
   steps:
     - run: echo "Hello, World!"
       shell: 'bash'
