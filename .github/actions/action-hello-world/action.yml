@@ -1,6 +1,7 @@
 name: 'Hello World Action'
 description: 'A custom action to print Hello World'
 runs:
-  using: 'bash'
+  using: 'ubuntu-latest'
+  shell: 'bash'
   steps:
     - run: echo "Hello, World!"
