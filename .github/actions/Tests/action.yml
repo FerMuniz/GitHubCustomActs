@@ -14,6 +14,6 @@ runs:
   steps:
     - name: "Parameters"
       shell: bash
-      run:| 
+      run: | 
         echo "${{ inputs.Test1 }}"
         echo "${{ inputs.Test2 }}"
