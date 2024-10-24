@@ -1,0 +1,8 @@
+name: 'Configure Infrastructure'
+description: 'Configure Infrastructure'
+runs:
+  using: 'composite'
+  steps:
+    - name: "Configure Infrastructure"
+      shell: bash
+      run: echo "Configuring Infrastructure"
