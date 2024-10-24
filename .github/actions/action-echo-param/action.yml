@@ -6,6 +6,8 @@ inputs:
     required: true
     default: 'No message provided'
 runs:
-  using: 'ubuntu-latest'
+  using: 'composite'
   steps:
-    - run: echo "${{ inputs.message }}"
+    - name: "Parameters"
+      shell: bash
+      run: echo "${{ inputs.message }}"
