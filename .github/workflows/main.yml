@@ -17,10 +17,10 @@ jobs:
 
       # Step 2: Run the "Hello World" Action
       - name: 'Run Hello World Action'
-        uses: .github/actions/action-hello-world
+        uses: ./.github/actions/action-hello-world
 
       # Step 3: Run the "Echo Parameter" Action
       - name: 'Run Echo Parameter Action'
-        uses: .github./actions/action-echo-param
+        uses: ./.github./actions/action-echo-param
         with:
           message: 'This is a custom parameter!'
