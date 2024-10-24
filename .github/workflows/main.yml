@@ -1,0 +1,26 @@
+name: 'Custom Actions Workflow'
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  run-custom-actions:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: 'Checkout Code'
+        uses: actions/checkout@v3
+
+      # Step 2: Run the "Hello World" Action
+      - name: 'Run Hello World Action'
+        uses: ./actions/action-hello-world
+
+      # Step 3: Run the "Echo Parameter" Action
+      - name: 'Run Echo Parameter Action'
+        uses: ./actions/action-echo-param
+        with:
+          message: 'This is a custom parameter!'
