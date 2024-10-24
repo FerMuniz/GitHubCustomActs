@@ -1,0 +1,19 @@
+name: 'Test'
+description: 'Test'
+inputs:
+  Test1:
+    description: 'Test1 to run'
+    required: true
+    default: 'No message provided'
+  Test2:
+    description: 'Test2 to run'
+    required: true
+    default: 'No message provided'
+runs:
+  using: 'composite'
+  steps:
+    - name: "Parameters"
+      shell: bash
+      run:| 
+        echo "${{ inputs.Test1 }}"
+        echo "${{ inputs.Test2 }}"
