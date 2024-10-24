@@ -6,6 +6,6 @@ inputs:
     required: true
     default: 'No message provided'
 runs:
-  using: 'node12'
+  using: 'ubuntu-latest'
   steps:
     - run: echo "${{ inputs.message }}"
