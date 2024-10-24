@@ -3,5 +3,6 @@ description: 'A custom action to print Hello World'
 runs:
   using: 'docker'
   steps:
-    - run: echo "Hello, World!"
-      shell: 'bash'
+    - name: "Hello world"
+      shell: bash
+      run: echo "Hello, World!"
