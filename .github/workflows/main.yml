@@ -17,10 +17,11 @@ jobs:
 
       # Step 2: Run the "Hello World" Action
       - name: 'Run Hello World Action'
-        uses: ./.github/actions/action-hello-world
+        uses: ./.github/actions/InfraConfig
 
       # Step 3: Run the "Echo Parameter" Action
       - name: 'Run Echo Parameter Action'
-        uses: ./.github/actions/action-echo-param
+        uses: ./.github/actions/Tests
         with:
-          message: 'This is a custom parameter!'
+          Test1: 'Sonnarqube'
+          Test2: 'JUnit'
