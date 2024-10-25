@@ -15,12 +15,18 @@ jobs:
       - name: 'Checkout Code'
         uses: actions/checkout@v3
 
-      # Step 2: Run the "Hello World" Action
-      - name: 'Run Hello World Action'
+      - name: 'Infra Congiguration'
         uses: ./.github/actions/InfraConfig
 
-      # Step 3: Run the "Echo Parameter" Action
-      - name: 'Run Echo Parameter Action'
+      - name: 'Build'
+        run: | 
+          echo "Building"
+
+      - name: 'Deploy'
+        run: | 
+          echo "Deploying"
+
+      - name: 'Tests'
         uses: ./.github/actions/Tests
         with:
           Test1: 'Sonnarqube'
