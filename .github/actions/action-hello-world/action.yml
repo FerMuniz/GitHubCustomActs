@@ -1,8 +1,0 @@
-name: 'Hello World Action'
-description: 'A custom action to print Hello World'
-runs:
-  using: 'composite'
-  steps:
-    - name: "Hello world"
-      shell: bash
-      run: echo "Hello, World!"
